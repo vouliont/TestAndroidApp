@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onStart() {
         super.onStart();
 
-        ImageView animatedDancingImageView = findViewById(R.id.animated_dancing_image_view);
-        animatedDancingImageView.setBackgroundResource(R.drawable.animated_dancing);
+        View animatedDancingImageView = findViewById(R.id.animated_dancing_view);
         dancingAnimation = (AnimationDrawable) animatedDancingImageView.getBackground();
 
         animateButton = findViewById(R.id.animate_button);
